@@ -1,8 +1,9 @@
 import './App.css';
 // import Home from './components/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { HomeTwo, AboutTwo } from './components/MultiPage';
-import { HashLink } from 'react-router-hash-link';
+import OffsetScrolling from './components/OffsetScrolling';
+// import { HomeTwo, AboutTwo } from './components/MultiPage';
+// import { HashLink } from 'react-router-hash-link';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
           <Route path='/' element={<Home />} />
         </Routes> */}
 
-        <nav>
+        {/* <nav>
           <HashLink smooth to='/'>
             HomeTwo
           </HashLink>{' '}
@@ -24,6 +25,10 @@ function App() {
         <Routes>
           <Route path='/' element={<HomeTwo />} />
           <Route path='/about' element={<AboutTwo />} />
+        </Routes> */}
+
+        <Routes>
+          <Route path='/' element={<OffsetScrolling />} />
         </Routes>
       </Router>
     </div>
